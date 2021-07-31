@@ -30,8 +30,7 @@ import Layout from '../components/Layout';
         return (
             <Layout>
                 <div>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
-                />
+                
                 <h3>Open Campaigns</h3>
               
               <Button 
