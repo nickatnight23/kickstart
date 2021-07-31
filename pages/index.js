@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import { Card, Button } from 'semantic-ui-react';
 import factory from '../ethereum/factory';
+import Layout from '../components/Layout';
 
 
 
@@ -27,17 +28,21 @@ import factory from '../ethereum/factory';
   
     render() {
         return (
-            <div>
+            <Layout>
+                <div>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
                 />
                 <h3>Open Campaigns</h3>
-              {this.renderCampaigns()}
-              <Button
+              
+              <Button 
+              floated ="right"
                 content= "Create Campaign"
                 icon= "add"
                 primary 
               /> 
-            </div>
+              {this.renderCampaigns()}
+             </div>
+            </Layout>
         )
     }
 }
